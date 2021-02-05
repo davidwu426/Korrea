@@ -1,0 +1,31 @@
+
+mat-sidenav-container {
+    height: 90vh;
+    border:none;
+    color: white;
+    mat-sidenav{
+        background-color: black;
+        width: 15%;
+        padding: 0;
+        margin: 0;
+        .mat-nav-list .mat-list-item{
+            color: white;
+        }
+    }
+
+    mat-sidenav-content{
+        //color: black;
+        background-color: white;
+        justify-content: center;
+        button{
+            background-color: black;
+            color: white;
+            border: none;
+            border-top-right-radius: 5px;
+            border-bottom-right-radius:5px;
+            width: 30px;
+            height: 30px;
+            font-size: 1.5rem;
+        }
+    }
+}

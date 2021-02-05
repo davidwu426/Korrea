@@ -1,0 +1,18 @@
+<app-header></app-header>
+<mat-sidenav-container>
+    <mat-sidenav #sidenav mode="side" [(opened)]="opened">
+        <mat-nav-list *ngIf="isAuthenticated">
+           <a mat-list-item routerLink = "/resources">Resources</a>
+           <a mat-list-item routerLink = "/project">Projects</a>
+           <a mat-list-item routerLink = "/formula">Formula</a>
+        </mat-nav-list>
+        <mat-nav-list *ngIf="!isAuthenticated">
+            <a mat-list-item routerLink = "/sigin">Signin</a>
+            <a mat-list-item routerLink = "/register">Register</a>
+         </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <button (click)="toggleNavBar(sidenav)">{{toggle}}</button>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

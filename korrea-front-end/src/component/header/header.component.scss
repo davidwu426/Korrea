@@ -1,0 +1,37 @@
+div{
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    border-top: 1px solid lightgrey;
+    font-size: 1.2rem;
+
+    table{
+        align-items: flex-end;
+        margin-right: 10px;
+        table-layout: fixed;
+        td{
+            background-color: white;
+            width: 20px;
+            height: 20px;
+            border-radius: 5px;
+        }
+    }
+
+    #title-container{
+        background-color: orangered;
+        width: 15%;
+        text-align: center;
+        color: white;
+    }
+    #project-container{
+        justify-content: center;
+        width: 70%;
+        color: black;
+    }
+
+    #user-contaienr{
+        width: 15%;
+        justify-content: space-evenly;
+    }
+}

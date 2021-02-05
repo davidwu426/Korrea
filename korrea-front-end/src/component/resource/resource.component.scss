@@ -1,0 +1,35 @@
+section{
+    width: 80%;
+    margin: auto auto;
+    div{
+        display: flex;
+        width: 100%;
+        color: black;
+        background-color:grey;
+        height: 40px;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+table{
+    width: 100%;
+    // margin: auto auto;
+    border: 1px solid grey;
+    th.mat-header-cell{
+        border-right: 1px solid grey;
+        color: black;
+    }
+    th.mat-header-cell:last-of-type{
+        border-right: none;
+    }
+    th.mat-header-cell:not(:first-of-type){
+        padding-left: 24px;
+    }
+
+    td.mat-cell:not(:first-of-type){
+        padding-left: 24px;
+    }
+    .mat-header-row{
+        background-color: lightgrey;
+    }
+}

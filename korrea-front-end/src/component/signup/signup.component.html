@@ -1,0 +1,27 @@
+
+    <form (ngSubmit) = "onSubmit()" [formGroup]="signupForm">
+        <h3>Signup</h3>
+        
+        <mat-form-field appearance="fill" >
+            <mat-label>Enter Username</mat-label>
+            <input matInput type="text" formControlName="username"> 
+        </mat-form-field>
+        <br/>
+        <mat-form-field appearance="fill">
+            <mat-label>Enter Email</mat-label>
+            <input matInput type='email'  formControlName="email">
+        </mat-form-field>
+        <br/>
+        <mat-form-field appearance="fill">
+            <mat-label>Enter Password</mat-label>
+            <input matInput type="password"  formControlName="password">
+        </mat-form-field>
+        <br/>
+        <mat-form-field appearance="fill">
+            <mat-label>Re-enter Password</mat-label>
+            <input matInput type="password"  formControlName="passwordVerifier">
+        </mat-form-field>
+        <br/>
+        <button mat-flat-button type="submit" >Signup</button>
+    </form>              
+

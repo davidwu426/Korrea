@@ -1,0 +1,22 @@
+
+form{
+    text-align:center;
+    //margin-top: 15vh;
+    .mat-form-field{
+        width: 300px;
+        margin-top: 10px;
+    }
+    input{
+        color: black;
+    }
+}
+h3{
+    justify-content: center;
+    text-align: center;
+    color: orangered;
+}
+button{
+    background-color: orangered;
+    color: white;
+    width: 300px;
+}
